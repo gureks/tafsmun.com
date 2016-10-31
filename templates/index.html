@@ -13,22 +13,45 @@
 
 	<!-- Header Slider -->
 	<header id="header">
-        <div id="myCarousel" class="carousel slide">
-            <div class="carousel-inner">
-                
-                <div class="logo-container">
-                    <a href="/">
-                        <img src="{{ url_for('static', filename='img/logo-header.png') }}" height="37" width="197" alt="">
-                    </a>
-                </div>
+		<div id="myCarousel" class="carousel slide">
+			<div class="carousel-inner">
+				
+				<div class="logo-container">
+					<a href="/">
+						<img src="{{ url_for('static', filename='img/logo-header.png') }}" height="37" width="197" alt="">
+					</a>
+				</div>
 				
 				 <div class="item active">
 					<div class="fill" style="background-image:url('{{ url_for('static', filename='img/slider/slider-4.jpg') }}');"></div>
-                    <div class="overlay"></div>
-               	</div>
-            </div>
-        </div>
-    </header>
+					<div class="overlay"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Call to action -->
+	<section id="register" class="call-to-action main-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 wow slideInLeft animated center-block">
+					<p class="light-text text-center">Register<span class="bold-text"> here.</p>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 button-container wow slideInRight animated">
+					<a href="{{ url_for('static', filename='downloads/invite.pdf') }}" class="button btn-block light text-center hvr-grow">School Delegation</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 button-container wow slideInRight animated">
+					<a href="#" class="button btn-block deep text-center hvr-grow">International Press</a><!-- Insert dropdown here -->
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 button-container wow slideInRight animated">
+					<a href="#" class="button btn-block light text-center hvr-grow">Individual Delegate</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</section>
 
 	<!-- Google Maps -->
 	<section id="map" class="map">
