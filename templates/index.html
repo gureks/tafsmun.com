@@ -31,95 +31,109 @@
 	</header>
 
 	<!-- About us -->
-    <section id="about-us" class="about-us">
-        <div class="overlay">
-            <div class="container padding-top-large">
-                <h2>
-                    <strong class="bold-text">About</strong>
-                    <span class="light-text main-color">US</span>
-                </h2>
-                <div class="line main-bg"></div>
-                <div class="row margin-bottom-medium">
-                    <div class="col-md-7">
-                        <div class="jumbo-text light-text margin-top-medium wow slideInLeft" data-wow-duration="2s">
-                            The <strong class="bold-text">TAFS MUN Society</strong> was started with an aim to initiate learning which does not take place within the walls of a normal classroom.
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <img src="{{ url_for('static', filename='img/about-side-side.png') }}" alt="About Us Image" class="center-block img-responsive">
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <p class="margin-bottom-medium wow slideInUp">Like the preceding years, this year as well we start this journey with an aim to recognize the significance of the United Nations Organization and the exemplary role played by it in fostering deliberation and policy formation, but at the same time, we also aim to realize the imperative role played by the Non-UN organizations, forums and of certain events which have shaped history and define our existence today.</p>
-               
-             	<!-- To do -->
-                <div class="row margin-top-large">
-                    <div class="col-md-12">
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	<section id="about-us" class="about-us">
+		<div class="overlay">
+			<div class="container padding-top-large">
+				<h2>
+					<strong class="bold-text">About</strong>
+					<span class="light-text main-color">US</span>
+				</h2>
+				<div class="line main-bg"></div>
+				<div class="row margin-bottom-medium">
+					<div class="col-md-7">
+						<div class="jumbo-text light-text margin-top-medium wow slideInLeft" data-wow-duration="2s">
+							The <strong class="bold-text">TAFS MUN Society</strong> was started with an aim to initiate learning which does not take place within the walls of a normal classroom.
+						</div>
+					</div>
+					<div class="col-md-5">
+						<img src="{{ url_for('static', filename='img/about-side-side.png') }}" alt="About Us Image" class="center-block img-responsive">
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<p class="margin-bottom-medium wow slideInUp">Like the preceding years, this year as well we start this journey with an aim to recognize the significance of the United Nations Organization and the exemplary role played by it in fostering deliberation and policy formation, but at the same time, we also aim to realize the imperative role played by the Non-UN organizations, forums and of certain events which have shaped history and define our existence today.</p>
+			   
+			   <!-- Collapsible Accordion -->
+				<div class="row margin-top-large">
+					<div class="col-md-12">
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-                            <!-- =========================
-                               Collapsible Panel 1
-                            ============================== -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingOne">
-                                    <div class="panel-title">
-                                        <a href="#collapseOne" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="state"><strong>-</strong></span>
-                                            <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit</strong>
-                                        </a>
-                                    </div>
-                                </div> <!-- *** end panel-heading *** -->
-                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer far.
-                                    </div>
-                                </div> <!-- *** end collapsed item *** -->
-                            </div> <!-- *** end panel *** -->
+							<!-- Collapsible Panel 1 -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseOne">
+											<span class="state"><strong>-</strong></span>
+											<strong>Date</strong>
+										</a>
+									</div>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body">
+										The Fourth edition of The Air Force School Model United Nations Conference will be held on <strong>26<super>th</super>-28<super>th</super> December</strong>.
+									</div>
+								</div>
+							</div> 
+							
+							<!-- Collapsible Panel 2 -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<div class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											<span class="state"><strong>+</strong></span>
+											<strong>Venue</strong>
+										</a>
+									</div>
+								</div> 
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									<div class="panel-body">
+										The Air Force School<br />Subroto Park<br />Delhi Cantt-110010<br />Nearest Metro Station: Dhaula Kuan, Airport Express Line
+									</div>
+								</div>
+							</div> 
 
-                            <!-- =========================
-                              Collapsible Panel 2
-                            ============================== -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <div class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <span class="state"><strong>+</strong></span>
-                                            <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit</strong>
-                                        </a>
-                                    </div>
-                                </div> <!-- *** end panel-heading *** -->
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer far.
-                                    </div>
-                                </div> <!-- *** end collapsed item *** -->
-                            </div> <!-- *** end panel *** -->
+							<!-- Collapsible Panel 3 -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											<span class="state"><strong>+</strong></span>
+											<strong>Contact</strong>
+										</a>
+									</div>
+								</div> 
+								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+									<div class="panel-body">
+									Teacher Co-ordinator: <strong>Sumita Balram</strong> +91-9818634838
+									Secretary General: <strong>Lakshay Talwar</strong> +91-9650267695
+									Student Co-ordinator: <strong>Hrishita Sharma</strong> +91-8527700268
+									Student Co-ordinator: <strong>Hrishita Sharma</strong> +91-9899693225
+									</div>
+								</div>
+							</div> 
 
-                            <!-- =========================
-                              Collapsible Panel 3
-                            ============================== -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <div class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <span class="state"><strong>+</strong></span>
-                                            <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit</strong>
-                                        </a>
-                                    </div>
-                                </div> <!-- *** end panel-heading *** -->
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer far.
-                                    </div>
-                                </div> <!-- *** end collapsed item *** -->
-                            </div> <!-- *** end panel *** -->
-                        </div> <!-- *** end panel-group *** -->
-                    </div> <!-- *** end col-md-8 *** -->
-                </div>
-            </div>
-        </div>
-    </section> 
-    
+							<!-- Collapsible Panel 4 -->
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFour">
+									<div class="panel-title">
+										<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+											<span class="state"><strong>+</strong></span>
+											<strong>Registration Fee</strong>
+										</a>
+									</div>
+								</div> 
+								<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+									<div class="panel-body">Each school has to pay a registration fee of <strong>INR 1000/-</strong> (this includes the teacher fee), and the fee for each delegate is <strong>INR 1700/-</strong>. Fee for International Press Participants is <strong>INR 1000/-</strong>. Fee has to be submitted by <strong>Demand Draft only</strong> in the name of<strong> The Air Force School</strong>.
+									</div>
+								</div>
+							</div> 
+
+						</div> 
+					</div> 
+				</div>
+			</div>
+		</div>
+	</section> 
+	
 	<!-- Call to action -->
 	<section id="register" class="call-to-action main-bg">
 		<div class="container">
