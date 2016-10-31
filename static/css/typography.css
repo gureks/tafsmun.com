@@ -3,11 +3,11 @@
  ========================================================================== */
 @font-face {
   font-family: 'Campton Bold';
-  src: url('../fonts/campton/Campton-BoldDEMO.otf');
+  src: url('/static/fonts/campton/Campton-BoldDEMO.otf');
 }
 @font-face {
   font-family: 'Campton Light';
-  src: url('../fonts/campton/Campton-LightDEMO.otf');
+  src: url('/static/fonts/campton/Campton-LightDEMO.otf');
 }
 html {
     font-family: 'Open Sans', sans-serif;
@@ -31,11 +31,11 @@ header p {
  ========================================================================== */
 @font-face {
   font-family: "Flaticon";
-  src: url("../fonts/flaticons/flaticon.eot");
-  src: url("../fonts/flaticons/flaticon.eot") format("embedded-opentype"),
-  url("../fonts/flaticons/flaticon.woff") format("woff"),
-  url("../fonts/flaticons/flaticon.ttf") format("truetype"),
-  url("../fonts/flaticons/flaticon.svg") format("svg");
+  src: url("/static/fonts/flaticons/flaticon.eot");
+  src: url("/static/fonts/flaticons/flaticon.eot") format("embedded-opentype"),
+  url("/static/fonts/flaticons/flaticon.woff") format("woff"),
+  url("/static/fonts/flaticons/flaticon.ttf") format("truetype"),
+  url("/static/fonts/flaticons/flaticon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
