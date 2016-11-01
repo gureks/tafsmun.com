@@ -51,7 +51,7 @@
 	<script src="{{ url_for('static', filename = 'js/vendor/jquery-migrate-1.2.1.min.js') }}"></script>
 	<script src="{{ url_for('static', filename = 'js/vendor/modernizr-2.8.3.min.js') }}"></script>
 	<script src="{{ url_for('static', filename = 'js/queryloader2.min.js') }}"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOsiOjjoOiFBmXLU0adNjsnCKLpcDfRy"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe-ApXAmJP_sQzU93WsRSricD4HgSJ3J0"></script>
 	<script src="{{ url_for('static', filename = 'js/twitterFetcher_min.js') }}"></script>
 	<script src="{{ url_for('static', filename = 'js/wow.min.js') }}"></script>
 	<script src="{{ url_for('static', filename = 'js/imagesloaded.pkgd.min.js') }}"></script>
@@ -85,25 +85,17 @@
 {% block navbar %}
 	<div class="mobilenav">
 		<ul>
-			<li>
-				<a href="/" data-rel="#header">
-					<span class="nav-label">Home</span>
-				</a>
+			<li data-rel="#header">
+				<span class="nav-label">Home</span>
 			</li>
-			<li>
-				<a href="/" data-rel="#about-us">
-					<span class="nav-label">About Us</span>
-				</a>
+			<li data-rel="#about-us">
+				<span class="nav-label">About Us</span>
 			</li>
-			<li>
-				<a href="/" data-rel="#register">
-					<span class="nav-label">Register</span>
-				</a>
+			<li data-rel="#register">
+				<span class="nav-label">Register</span>
 			</li>
-			<li>
-				<a href="/" data-rel="#committees">				
-					<span class="nav-label">Committees</span>
-				</a>
+			<li data-rel="#committees">				
+				<span class="nav-label">Committees</span>
 			</li>
 			<li data-rel="#testimonial">
 				<span class="nav-label">(To do)Testimonial</span>
@@ -111,10 +103,8 @@
 			<li data-rel="#portfolio">
 				<span class="nav-label">(To do)Portfolio</span>
 			</li>
-			<li>
-				<a href="/" data-rel="#map">
-					<span class="nav-label">Contact Us</span>
-				</a>
+			<li data-rel="#map">
+				<span class="nav-label">Contact Us</span>
 			</li>
 		</ul>
 	</div>  
