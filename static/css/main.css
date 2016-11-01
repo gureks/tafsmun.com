@@ -590,9 +590,11 @@ header .logo-container {
   2.3 Component: About Us
  ========================================================================== */
 .about-us {
-  background: url("../img/about-us-bg.jpg") no-repeat center fixed;
+  /*background: url("../img/about-us-bg.jpg") no-repeat center fixed;
   background-size: cover;
   position: relative;
+  */
+  background-color: #ecf0f1;
 }
 .about-us .overlay {
   background: rgba(238, 238, 238, 0.95);
