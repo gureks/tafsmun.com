@@ -145,8 +145,14 @@
 					<a href="{{ url_for('static', filename='downloads/invite.pdf') }}" class="button btn-block light text-center hvr-grow">School Delegation</a>
 				</div>
 
-				<div class="col-md-4 col-sm-6 col-xs-12 button-container wow slideInRight animated">
-					<a href="#" class="button btn-block deep text-center hvr-grow" style="background-color: #2980b9 ">International Press</a><!-- Insert dropdown here -->
+				<div class="col-md-4 col-sm-6 col-xs-12 button-container wow slideInRight animated dropup">
+					<a href="#" class="button btn-block deep text-center hvr-grow dropdown-toggle" style="background-color: #2980b9;" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">International Press</a><!-- Insert dropdown here -->
+
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<button class="button btn-block light text-center dropdown-item"><a  href="{{ url_for('static', filename='downloads/reporter-app.docx') }}">Reporter</a></button>
+						<button class="button btn-block light text-center dropdown-item"><a href="{{ url_for('static', filename='downloads/photographer-app.docx') }}">Photographer</a></button>
+						<button class="button btn-block light text-center dropdown-item"><a href="{{ url_for('static', filename='downloads/cartoonist-app.docx') }}">Cartoonist</a></button>
+					</div>
 				</div>
 
 				<div class="col-md-4 col-sm-6 col-xs-12 button-container wow slideInRight animated" data-toggle="modal" data-target="#individual-delegate">
@@ -159,7 +165,7 @@
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">×</span>
 							</button>
-							<div class="modal-body text-center jumbo-text">
+							<div class="modal-body text-center bold-text">
 								Individual Delegate Applications will open soon... 
 							</div>
 						</div>
