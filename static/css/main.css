@@ -349,6 +349,26 @@ h6 {
 .mobilenav li:first-child {
   margin-top: 60px;
 }
+
+.mobilenav a {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 220%;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  width: 100%;
+}
+.mobilenav a:last-child span {
+  border-bottom: none;
+}
+.mobilenav a:hover {
+  cursor: pointer;
+}
+.mobilenav a:first-child {
+  margin-top: 60px;
+}
 /* ========================================================================
  1.4 Hover animation by hover.css http://ianlunn.github.io/Hover/
  ========================================================================== */
