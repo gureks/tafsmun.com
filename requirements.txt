@@ -1,0 +1,6 @@
+flask
+jinja2
+itsdangerous
+uwsgi
+flask-wtf
+flask-bootstrap
