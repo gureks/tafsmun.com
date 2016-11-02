@@ -1,0 +1,186 @@
+{% extends  "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block html_attribs %} class="no-js" lang="en-us"{% endblock %}
+
+{% block metas %}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="TAFSMUN 2016 - Rerum. Reform. Rebuild.">
+	<meta name="keywords" content="TAFSMUN, The Air Force School, Model United Nations, 26-28 December 2016">
+	<meta name="author" content="Gurek Singh @gureks">
+
+    {{ super() }}
+{% endblock %}
+
+{% block title %}TAFSMUN'16 | 26, 27, 28 December 2016 | Rerum. Reform. Rebuild.{% endblock %}
+
+{% block styles %}
+	{{ super() }}
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/animate.min.css') }}">
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/font-awesome.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/typography.css') }}">
+
+	<!-- Carousel -->
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/owl.carousel.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/owl.theme.css') }}">
+
+	<!-- Lightbox -->
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/nivo-lightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/nivo-lightbox-default.css') }}">
+
+	<!-- Circle generator -->
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/jquery.circliful.css') }}">
+
+	<!-- Custom stylesheet -->
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/responsive.css') }}">
+
+	<style>
+		label{
+			color: black;
+		}
+	</style>
+{% endblock %}
+
+{% block scripts %}
+	{{ super() }}
+	<script src="{{ url_for('static', filename = 'js/vendor/jquery-migrate-1.2.1.min.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/vendor/modernizr-2.8.3.min.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/queryloader2.min.js') }}"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe-ApXAmJP_sQzU93WsRSricD4HgSJ3J0"></script>
+	<script src="{{ url_for('static', filename = 'js/twitterFetcher_min.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/wow.min.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/imagesloaded.pkgd.min.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/jquery.easing.min.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/appear.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/jquery.circliful.min.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/nivo-lightbox.min.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/isotope.pkgd.min.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/notie.js') }}"></script>
+	<script src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+
+	<!-- Preloader -->
+	<script>
+		window.addEventListener('DOMContentLoaded', function() {
+			"use strict";
+			new QueryLoader2(document.querySelector("body"), {
+				barColor: "#3498db",
+				backgroundColor: "#111",
+				percentage: true,
+				barHeight: 1,
+				minimumTime: 200,
+				fadeOutTime: 1000
+			});
+		});
+		var alert_color_success_background = '#3498db';
+		var alert_color_error_background = '#CF000F';
+	</script>
+{% endblock %}
+
+{% block navbar %}
+	<div class="mobilenav">
+		<ul>
+			<li data-rel="#header">
+				<span class="nav-label">Home</span>
+			</li>
+			<li data-rel="#about-us">
+				<span class="nav-label">About Us</span>
+			</li>
+			<li data-rel="#register">
+				<span class="nav-label">Register</span>
+			</li>
+			<li data-rel="#committees">				
+				<span class="nav-label">Committees</span>
+			</li>
+			<li data-rel="#map">
+				<span class="nav-label">Contact Us</span>
+			</li>
+		</ul>
+	</div>  
+
+	<!-- Hamburger Icon -->
+	<a href="javascript:void(0)" class="menu-trigger">
+		<div class="hamburger">
+			<div class="menui top-menu"></div>
+			<div class="menui mid-menu"></div>
+			<div class="menui bottom-menu"></div>
+		</div>
+	</a>
+{% endblock%}
+
+{% block body %}
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	{{ super () }}
+
+{% endblock %}
+
+{% block sendmessage %}
+	<section id="send-message" class="send-message main-bg white-color text-center">
+		<div class="send-icon" data-toggle="modal" data-target="#contact-form">
+			<i class="fa fa-paper-plane"></i>
+		</div>
+		<div data-toggle="modal" data-target="#contact-form">
+			<p class="light-text">Have any <span class="bold-text">doubts</span>? Click here to send us a <span class="bold-text">message</span ></p>
+		</div>
+
+		<!-- Contact Form Modal -->
+		<div class="modal fade contact-form" id="contact-form" tabindex="-1" role="dialog" aria-labelledby="contact-form" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					
+					<div class="modal-body">
+
+						{{ wtf.quick_form(form) }}
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+{% block footer %}
+	<footer id="footer" class="footer">
+		<div class="container padding-large text-center">
+			<div class="row">
+				<div class="col-md-12">
+					<figure class="margin-bottom-medium">
+						<img src="{{ url_for('static', filename = 'img/logo.png') }}" height="50" width="200" class="footer-logo" alt="TAFSMUN'16">
+					</figure>
+					<p class="margin-bottom-medium">
+						Rerum. Reform. Rebuild.
+						<br />26<super>th</super>-28<super>th</super> December 2016
+						<br />The Air Force School, Subroto Park, Delhi Cantt-110010
+					</p>
+
+					<ul class="social margin-bottom-medium">
+						<li class="facebook hvr-pulse"><a href="//facebook.com/tafsmun"><i class="fa fa-facebook"></i></a></li>
+						<li class="g-plus hvr-pulse"><a href="mailto:mail@tafsmun.com"><i class="fa fa-envelope-o"></i></a></li>
+						<li class="dribble hvr-pulse"><a href="tel:+919650267695"><i class="fa fa-phone"></i></a></li>
+					</ul>
+
+					<p class="copyright">
+						&copy; All rights reserved TAFSMUN 2016 <br />
+						Made by <a href="//gureksingh.me" target="_blank">Gurek Singh</a>
+						Theme by <a href="https://shapebootstrap.net/item/1524919-krefolio-startup-agency-landing-page-template"  target="_blank">Krefolio</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Back to top -->
+	<div class="back-to-top" data-rel="header">
+		<i class="icon-up"></i>
+	</div>
+{% endblock %}
