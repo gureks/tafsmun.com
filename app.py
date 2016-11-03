@@ -37,5 +37,14 @@ def webmail():
 def ebapps():
 	return render_template('ebapps.html')
 
+@app.route('/msgs')
+def msgs():
+	msgfile = open('msgs.txt').readlines()
+	output = ""
+	for line in msgfile:
+		output += line + "<br />"
+
+	return output
+
 #if __name__ == '__main__':
 #	app.run(host='0.0.0.0',port=8000,debug=True)
