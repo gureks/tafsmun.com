@@ -141,12 +141,16 @@
 				<div class="col-md-12 col-sm-12 col-xs-12 wow slideInLeft animated center-block">
 					<p class="light-text text-center">To be a part of the conference, <span class="bold-text">register here.</span></p>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-12 button-container wow slideInRight animated">
-					<a href="{{ url_for('static', filename='downloads/invite.pdf') }}" class="button btn-block light text-center hvr-grow">School Delegation</a>
-				</div>
-
 				<div class="col-md-4 col-sm-6 col-xs-12 button-container wow slideInRight animated dropup">
-					<a href="#" class="button btn-block deep text-center hvr-grow dropdown-toggle" style="background-color: #2980b9;" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">International Press</a><!-- Insert dropdown here -->
+					<a href="#" class="button btn-block light text-center hvr-grow dropdown-toggle" id="delegationDropdown" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">School Delegation</a>
+					
+					<div class="dropdown-menu" aria-labelledby="delegationDropdown">
+						<button class="button btn-block light text-center dropdown-item"><a  href="{{ url_for('static', filename='downloads/invite.pdf') }}">Invite</a></button>
+						<button class="button btn-block light text-center dropdown-item"><a href="{{ url_for('static', filename='downloads/form.docx') }}">Registration Form</a></button>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 button-container wow slideInRight animated dropup">
+					<a href="#" class="button btn-block deep text-center hvr-grow dropdown-toggle" style="background-color: #2980b9;" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">International Press</a>
 
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 						<button class="button btn-block light text-center dropdown-item"><a  href="{{ url_for('static', filename='downloads/reporter-app.docx') }}">Reporter</a></button>
