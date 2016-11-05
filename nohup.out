@@ -25,3 +25,228 @@
   form = ContactForm()
 /home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
   form = ContactForm()
+[2016-11-03 16:05:17 +0000] [15544] [INFO] Handling signal: hup
+[2016-11-03 16:05:17 +0000] [15544] [INFO] Hang up: Master
+[2016-11-03 16:05:17 +0000] [16188] [INFO] Booting worker with pid: 16188
+[2016-11-03 16:05:17 +0000] [16189] [INFO] Booting worker with pid: 16189
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.bootstrap is deprecated, use flask_bootstrap instead.
+  .format(x=modname), ExtDeprecationWarning
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.bootstrap is deprecated, use flask_bootstrap instead.
+  .format(x=modname), ExtDeprecationWarning
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+  .format(x=modname), ExtDeprecationWarning
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+  .format(x=modname), ExtDeprecationWarning
+[2016-11-03 16:05:18 +0000] [16188] [INFO] Worker exiting (pid: 16188)
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+[2016-11-03 16:36:33 +0000] [15544] [INFO] Handling signal: term
+[2016-11-03 16:36:33 +0000] [16189] [INFO] Worker exiting (pid: 16189)
+[2016-11-03 16:36:33 +0000] [15544] [INFO] Shutting down: Master
+[2016-11-03 16:38:36 +0000] [16298] [INFO] Starting gunicorn 19.6.0
+[2016-11-03 16:38:36 +0000] [16298] [INFO] Listening at: http://127.0.0.1:8000 (16298)
+[2016-11-03 16:38:36 +0000] [16298] [INFO] Using worker: sync
+[2016-11-03 16:38:36 +0000] [16303] [INFO] Booting worker with pid: 16303
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.bootstrap is deprecated, use flask_bootstrap instead.
+  .format(x=modname), ExtDeprecationWarning
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+  .format(x=modname), ExtDeprecationWarning
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+[2016-11-03 16:38:47 +0000] [16298] [INFO] Handling signal: hup
+[2016-11-03 16:38:47 +0000] [16298] [INFO] Hang up: Master
+[2016-11-03 16:38:47 +0000] [16306] [INFO] Booting worker with pid: 16306
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.bootstrap is deprecated, use flask_bootstrap instead.
+  .format(x=modname), ExtDeprecationWarning
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+  .format(x=modname), ExtDeprecationWarning
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+[2016-11-03 16:47:50 +0000] [16298] [INFO] Handling signal: term
+[2016-11-03 16:47:50 +0000] [16306] [INFO] Worker exiting (pid: 16306)
+[2016-11-03 16:47:50 +0000] [16298] [INFO] Shutting down: Master
+[2016-11-03 16:48:03 +0000] [17009] [INFO] Starting gunicorn 19.6.0
+[2016-11-03 16:48:03 +0000] [17009] [INFO] Listening at: http://127.0.0.1:8000 (17009)
+[2016-11-03 16:48:03 +0000] [17009] [INFO] Using worker: sync
+[2016-11-03 16:48:03 +0000] [17014] [INFO] Booting worker with pid: 17014
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.bootstrap is deprecated, use flask_bootstrap instead.
+  .format(x=modname), ExtDeprecationWarning
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+  .format(x=modname), ExtDeprecationWarning
+[2016-11-03 16:48:30 +0000] [17009] [INFO] Handling signal: hup
+[2016-11-03 16:48:30 +0000] [17009] [INFO] Hang up: Master
+[2016-11-03 16:48:30 +0000] [17017] [INFO] Booting worker with pid: 17017
+[2016-11-03 16:48:30 +0000] [17018] [INFO] Booting worker with pid: 17018
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.bootstrap is deprecated, use flask_bootstrap instead.
+  .format(x=modname), ExtDeprecationWarning
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+  .format(x=modname), ExtDeprecationWarning
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.bootstrap is deprecated, use flask_bootstrap instead.
+  .format(x=modname), ExtDeprecationWarning
+[2016-11-03 16:48:30 +0000] [17017] [INFO] Worker exiting (pid: 17017)
+/usr/local/lib/python2.7/dist-packages/flask/exthook.py:71: ExtDeprecationWarning: Importing flask.ext.wtf is deprecated, use flask_wtf instead.
+  .format(x=modname), ExtDeprecationWarning
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:19: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
