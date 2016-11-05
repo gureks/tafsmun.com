@@ -10,6 +10,17 @@ class ContactForm(Form):
 	msg = TextAreaField('What do you want to say to us?', validators=[Required()])
 	submit = SubmitField('Submit')
 
+class IndiForm(Form):
+	name = StringField('Name', validators=[Required()])
+	email = StringField('Email Address', validators=[Required(),Email()])
+	school = StringField('School')		
+	phone = StringField('Phone Number')		
+	exp = TextAreaField('Previous MUN experience. Format: MUN - Position or Country - Committee - Prize Won', validators=[Required()])
+	pref1 = StringField('Committee and Allotment preference 1', validators=[Required()])
+	pref2 = StringField('Committee and Allotment preference 2', validators=[Required()])
+	pref3 = StringField('Committee and Allotment preference 3')
+	submit = SubmitField('Submit')
+
 app = Flask('__name__')
 bootstrap = Bootstrap(app)
 app.config['SECRET_KEY']='youcantguessthis'
@@ -17,6 +28,7 @@ app.config['SECRET_KEY']='youcantguessthis'
 @app.route('/', methods=['GET', 'POST'])
 def index():
 	form = ContactForm()
+	delform  = IndiForm()
 	if form.validate_on_submit():
 		msgfile = open("msgs.txt","a")
 		msgfile.write("Name:	"+form.name.data+"\n")
@@ -27,7 +39,30 @@ def index():
 		form.name.data=''
 		form.email.data=''
 		form.msg.data=''
-	return render_template('index.html', form=form);
+
+	if delform.validate_on_submit():
+		delfile = open("applications.txt","a")
+		delfile.write("Name:	"+delform.name.data+"\n")
+		delfile.write("Email:	"+delform.email.data+"\n")
+		delfile.write("School:	"+delform.school.data+"\n")
+		delfile.write("Phone:	"+delform.phone.data+"\n")
+		delfile.write("Experience:	"+delform.exp.data+"\n")
+		delfile.write("Preference 1:	"+delform.pref1.data+"\n")
+		delfile.write("Preference 2:	"+delform.pref2.data+"\n")
+		delfile.write("Preference 3:	"+delform.pref3.data+"\n")
+		delfile.write("-------------------------------------------------------------\n\n")
+		delfile.close();
+		flash('Thanks for submitting the application, we\'ll respond back soon and confirm you via mail.')
+		delform.name.data=''
+		delform.email.data=''
+		delform.school.data=''
+		delform.phone.data=''
+		delform.exp.data=''
+		delform.pref1.data=''
+		delform.pref2.data=''
+		delform.pref3.data=''
+
+	return render_template('index.html', form=form, delform=delform);
 
 @app.route('/webmail')
 def webmail():
@@ -46,5 +81,14 @@ def msgs():
 
 	return output
 
-#if __name__ == '__main__':
-#	app.run(host='0.0.0.0',port=8000,debug=True)
+@app.route('/applications')
+def applications():
+	delfile = open('applications.txt').readlines()
+	output = ""
+	for line in delfile:
+		output += line + "<br />"
+
+	return output
+
+if __name__ == '__main__':
+	app.run(host='0.0.0.0',port=8000,debug=True)

@@ -167,19 +167,25 @@
 				<div class="col-md-4 col-sm-6 col-xs-12 button-container wow slideInRight animated" data-toggle="modal" data-target="#individual-delegate">
 					<a href="#" class="button btn-block light text-center hvr-grow">Individual Delegate</a>
 				</div>
-
-				<div class="modal fade contact-form" id="individual-delegate" tabindex="-1" role="dialog" aria-labelledby="individual-delegate" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">×</span>
-							</button>
-							<div class="modal-body text-center bold-text">
-								Individual Delegate Applications will open soon... 
+				<div class="modal fade contact-form" id="individual-delegate" tabindex="-1" role="dialog" aria-labelledby="contact-form" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">×</span>
+								</button>
+								
+								<div class="modal-body text-center bold-text">
+									<h2><strong class="bold-text" style="color: black;">Individual Delegate Application</strong><br /></h2>
+									<center>
+									<div class="line main-bg margin-bottom-medium"></div>
+									</center>
+									{{ wtf.quick_form(delform) }}
+									
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+
 				<div class="clearfix"></div>
 			</div>
 		</div>
