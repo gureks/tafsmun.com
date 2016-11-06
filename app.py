@@ -31,6 +31,7 @@ def index():
 	delform  = IndiForm()
 	if form.validate_on_submit():
 		msgfile = open("msgs.txt","a")
+		
 		msgfile.write("Name:	"+form.name.data+"\n")
 		msgfile.write("Email:	"+form.email.data+"\n")
 		msgfile.write("Message:	"+form.msg.data+"\n")
