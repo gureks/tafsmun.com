@@ -33,7 +33,8 @@ def index():
 		msgfile = open("msgs.txt","a")
 		msgfile.write("Name:	"+form.name.data+"\n")
 		msgfile.write("Email:	"+form.email.data+"\n")
-		msgfile.write("Message:	"+form.msg.data+"\n\n\n")
+		msgfile.write("Message:	"+form.msg.data+"\n")
+		msgfile.write("-------------------------------------------------------------\n\n")
 		msgfile.close();
 		flash('Thanks for submitting the form, we\'ll respond back soon')
 		form.name.data=''
