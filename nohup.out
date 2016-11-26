@@ -18080,3 +18080,18 @@ UnicodeEncodeError: 'ascii' codec can't encode character u'\u2013' in position 2
   form = ContactForm()
 /home/gureks/tafsmun/app.py:31: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
   delform  = IndiForm()
+/home/gureks/tafsmun/app.py:30: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:31: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  delform  = IndiForm()
+/home/gureks/tafsmun/app.py:30: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:31: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  delform  = IndiForm()
+/home/gureks/tafsmun/app.py:30: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  form = ContactForm()
+/home/gureks/tafsmun/app.py:31: FlaskWTFDeprecationWarning: "flask_wtf.Form" has been renamed to "FlaskForm" and will be removed in 1.0.
+  delform  = IndiForm()
+[2016-11-26 00:46:41 +0000] [23486] [INFO] Handling signal: term
+[2016-11-26 00:46:41 +0000] [23494] [INFO] Worker exiting (pid: 23494)
+[2016-11-26 00:46:42 +0000] [23486] [INFO] Shutting down: Master
