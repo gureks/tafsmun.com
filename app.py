@@ -10,7 +10,7 @@ class ContactForm(Form):
 	msg = TextAreaField('What do you want to say to us?', validators=[Required()])
 	submit = SubmitField('Submit')
 
-class IndiForm(Form):
+'''class IndiForm(Form):
 	name = StringField('Name', validators=[Required()])
 	email = StringField('Email Address', validators=[Required(),Email()])
 	school = StringField('School')		
@@ -20,7 +20,7 @@ class IndiForm(Form):
 	pref2 = StringField('Committee and Allotment preference 2', validators=[Required()])
 	pref3 = StringField('Committee and Allotment preference 3')
 	submit = SubmitField('Submit')
-
+'''
 app = Flask('__name__')
 bootstrap = Bootstrap(app)
 app.config['SECRET_KEY']='youcantguessthis'
@@ -28,7 +28,7 @@ app.config['SECRET_KEY']='youcantguessthis'
 @app.route('/', methods=['GET', 'POST'])
 def index():
 	form = ContactForm()
-	delform  = IndiForm()
+	#delform  = IndiForm()
 	if form.validate_on_submit():
 		msgfile = open("msgs.txt","a")
 		
@@ -42,7 +42,7 @@ def index():
 		form.email.data=''
 		form.msg.data=''
 
-	if delform.validate_on_submit():
+	'''if delform.validate_on_submit():
 		delfile = open("applications.txt","a")
 		delfile.write("Name:	"+delform.name.data+"\n")
 		delfile.write("Email:	"+delform.email.data+"\n")
@@ -63,17 +63,17 @@ def index():
 		delform.pref1.data=''
 		delform.pref2.data=''
 		delform.pref3.data=''
-
-	return render_template('index.html', form=form, delform=delform);
+'''
+	return render_template('index.html', form=form)
 
 @app.route('/webmail')
 def webmail():
 	return render_template('webmail.html')
 
-@app.route('/ebapps')
+'''@app.route('/ebapps')
 def ebapps():
 	return render_template('ebapps.html')
-
+'''
 @app.route('/msgs')
 def msgs():
 	msgfile = open('msgs.txt').readlines()
