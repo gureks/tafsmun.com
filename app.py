@@ -116,7 +116,8 @@ def alfaaz1():
 
 @app.route('/issue-2')
 def alfaaz2():
-	return "something";
+	return '''
+	<iframe style="width:100%; height:371px;" src="//e.issuu.com/embed.html#27549567/42433155" frameborder="0" allowfullscreen></iframe>''';
 
 @app.route('/issue-3')
 def alfaaz3():
