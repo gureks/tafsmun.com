@@ -92,5 +92,40 @@ def applications():
 
 	return output
 
+@app.route('/alfaaz', methods=['GET','POST'])
+def newsletters():
+	form = ContactForm()
+	if form.validate_on_submit():
+		msgfile = open("msgs.txt","a")
+		
+		msgfile.write("Name:	"+form.name.data+"\n")
+		msgfile.write("Email:	"+form.email.data+"\n")
+		msgfile.write("Message:	"+form.msg.data+"\n")
+		msgfile.write("-------------------------------------------------------------\n\n")
+		msgfile.close();
+		flash('Thanks for submitting the form, we\'ll respond back soon')
+		form.name.data=''
+		form.email.data=''
+		form.msg.data=''
+	return render_template('blog.html',form=form)
+
+@app.route('/issue-1')
+def alfaaz1():
+	return '''
+	<iframe style="width:100%; height:100%;" src="//e.issuu.com/embed.html#27549567/42432229" frameborder="0" allowfullscreen></iframe>'''
+
+@app.route('/issue-2')
+def alfaaz2():
+	return "something";
+
+@app.route('/issue-3')
+def alfaaz3():
+	return "will be up";
+
+
+@app.route('/issue-4')
+def alfaaz4():
+	return "will be up";
+	
 if __name__ == '__main__':
 	app.run(host='0.0.0.0',port=8000,debug=True)

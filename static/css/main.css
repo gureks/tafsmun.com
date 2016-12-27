@@ -658,18 +658,29 @@ header .logo-container {
   padding-left: 200px;
   padding-right: 50px;
   transition: background .5s;
+  text-decoration: none;
 }
 .case-study-right .overlay {
   padding-right: 200px;
   padding-left: 50px;
   transition: background .5s;
+    text-decoration: none;
+
 }
-.case-study .case-study-left {
-  background: url("../img/case-study/bf-left.jpg") no-repeat;
+.case-study .issue-1 {
+  background: url("../img/case-study/issue-1.jpg") no-repeat;
   background-size: cover;
 }
-.case-study .case-study-right {
-  background: url("../img/case-study/bf-right.jpg") no-repeat;
+.case-study .issue-2 {
+  background: url("../img/case-study/issue-2.jpg") no-repeat;
+  background-size: cover;
+}
+.case-study .issue-3 {
+  background: url("../img/case-study/issue-3.jpg") no-repeat;
+  background-size: cover;
+}
+.case-study .issue-4 {
+  background: url("../img/case-study/issue-4.jpg") no-repeat;
   background-size: cover;
 }
 .case-study .overlay:hover {
@@ -683,6 +694,10 @@ header .logo-container {
 }
 .case-study .description {
   font-weight: lighter;
+}
+.overlay a {
+  text-decoration: none;
+  color: white;
 }
 /* ========================================================================
   2.5 Component: Why choose us

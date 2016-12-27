@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	
+	{{ super() }}
+	
+	{% for message in get_flashed_messages() %}
+		<div class="alert alert-warning">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			{{ message }}
+		</div>
+	{% endfor %}
+
+	<header id="header">
+		<div id="myCarousel" class="carousel slide">
+			<div class="carousel-inner">
+				
+				<div class="logo-container">
+					<a href="/">
+						<img src="{{ url_for('static', filename='img/logo-header.png') }}" height="50" width="200" alt="">
+					</a>
+				</div>
+				
+				 <div class="item active">
+					<div class="fill" style="background-image:url('{{ url_for('static', filename='img/slider/alfaaz.png') }}');"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="case-study" class="case-study">
+		<div class="row mar-none mat-none">
+			<div class="col-md-6 issue-1 case-study-left wow slideInLeft">
+				<div class="overlay padding-large text-right">
+					<a href="/issue-1">
+					<div class="description">
+						<h3 class="margin-bottom-small light-text">ISSUE 1</h3>
+						<p>26th December 2016</p>
+					</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 issue-2 case-study-right wow slideInRight">
+
+				<div class="overlay padding-large">
+					<a href="/issue-2">
+					<div class="description">
+						<h3 class="margin-bottom-small light-text">ISSUE 2</h3>
+						<p>27th December 2016</p>
+					</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% block sendmessage %}{{ super() }}{% endblock %}
+
+	{% block footer %}{{ super() }}{% endblock %}
+	
+{% endblock %}
