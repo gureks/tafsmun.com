@@ -676,11 +676,11 @@ header .logo-container {
   background-size: cover;
 }
 .case-study .issue-3 {
-  background: url("http://localhost:8000/static/img/case-study/issue-3.jpg") no-repeat;
+  background: url("../img/case-study/issue-3.jpg") no-repeat;
   background-size: cover;
 }
 .case-study .issue-4 {
-  background: url("http://localhost:8000/static/img/case-study/issue-4.jpg") no-repeat;
+  background: url("../img/case-study/issue-4.jpg") no-repeat;
   background-size: cover;
 }
 .case-study .overlay:hover {
